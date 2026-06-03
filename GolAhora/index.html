@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gol Ahora - Complejo de Fútbol Profesional</title>
+    <!-- Google Fonts (Poppins) -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome para Iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Vinculación del CSS Local -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-football-dark text-light">
+
+    <!-- NAVBAR FIJO CON ESPACIADO COMPACTO -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top py-2 custom-navbar" id="mainNavbar">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#inicio">
+                <i class="fa-solid fa-futbol text-sports me-2"></i>
+                <span class="fw-bold tracking-wide text-uppercase">Gol Ahora</span>
+            </a>
+            <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarMain">
+                <ul class="navbar-nav ms-auto align-items-center mb-2 mb-lg-0 gap-1">
+                    <li class="nav-item"><a class="nav-link px-2 text-uppercase small fw-medium" href="#inicio">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link px-2 text-uppercase small fw-medium" href="#servicios">Qué Ofrecemos</a></li>
+                    <li class="nav-item"><a class="nav-link px-2 text-uppercase small fw-medium" href="#beneficios">Beneficios</a></li>
+                    <li class="nav-item ms-lg-2 mt-2 mt-lg-0 w-100 w-lg-auto">
+                        <a class="btn btn-outline-success btn-sm w-100 px-3 py-1.5 text-white border-sports dynamic-btn" href="login.html">Acceder</a>
+                    </li>
+                    <li class="nav-item ms-lg-1 mt-1 mt-lg-0 w-100 w-lg-auto">
+                        <a class="btn btn-sports btn-sm w-100 px-3 py-1.5 dynamic-btn" href="registro.html">Registrarse</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- SECCIÓN HERO -->
+    <header id="inicio" class="hero-section d-flex align-items-center position-relative pt-5">
+        <div class="container text-center text-white position-relative z-2 mt-5">
+            <span class="badge bg-success px-3 py-2 mb-3 tracking-wider text-uppercase border border-success">Predio Exclusivo de Fútbol</span>
+            <h1 class="display-4 fw-bold mb-3 text-uppercase tracking-tight">Reservá tu cancha en segundos</h1>
+            <p class="lead mb-4 mx-auto style-sub text-light-75">Gestioná tus turnos, prendete en ligas y entrená en el complejo más moderno de la zona.</p>
+            <div class="d-sm-flex justify-content-center gap-3">
+                <a href="login.html" class="btn btn-sports btn-lg px-5 py-3 fw-bold shadow mb-3 mb-sm-0 w-100 w-sm-auto">Reservar Turno</a>
+                <a href="#servicios" class="btn btn-outline-light btn-lg px-5 py-3 w-100 w-sm-auto">Ver Actividades</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- QUÉ OFRECEMOS (TARJETAS DE SERVICIOS) -->
+    <section id="servicios" class="py-5 bg-football-card-dark section-anchor">
+        <div class="container container-service-fix">
+            <div class="text-center mb-5 text-title-spacing">
+                <span class="text-sports fw-bold text-uppercase tracking-wider small">Servicios Institucionales</span>
+                <h2 class="fw-bold text-white mt-1 text-uppercase">Servicios Disponibles en Gol Ahora</h2>
+            </div>
+            <div class="row g-4">
+                <!-- Tarjeta 1: Alquiler de Canchas  -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card card-sport h-100 border-0 bg-navy text-white shadow-lg">
+                        <div class="card-img-container">
+                            <img src="https://futdados.com/wp-content/uploads/2020/09/anto.jpg" class="card-img-top" alt="Complejo de Canchas de Fútbol Sintético">
+                        </div>
+                        <div class="card-body p-4">
+                            <div class="text-sports mb-2 small fw-bold"><i class="fa-solid fa-square-poll-horizontal me-1"></i> Formatos F5 · F7 · F11</div>
+                            <h5 class="card-title fw-bold">Alquiler de Canchas</h5>
+                            <p class="card-text text-light-50 small">Infraestructura deportiva con césped sintético de alta densidad, sistema de amortiguación perimetral y luminarias LED de nivel profesional.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 2: Ligas y Torneos  -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card card-sport h-100 border-0 bg-navy text-white shadow-lg">
+                        <div class="card-img-container">
+                            <img src="" class="card-img-top" alt="Ligas Y Torneos de Fútbol">
+                        </div>
+                        <div class="card-body p-4">
+                            <div class="text-sports mb-2 small fw-bold"><i class="fa-solid fa-trophy me-1"></i> Torneos Oficiales</div>
+                            <h5 class="card-title fw-bold">Ligas y Torneos</h5>
+                            <p class="card-text text-light-50 small">Organización integral de certámenes competitivos y de carácter amateur. Incluye gestión automatizada de fixtures, tablas de posiciones y estadísticas.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 3: Entrenamientos Competitivos (Fútbol con conos) -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card card-sport h-100 border-0 bg-navy text-white shadow-lg">
+                        <div class="card-img-container">
+                            <img src="" class="card-img-top" alt="Entrenamiento de Fútbol Profesional">
+                        </div>
+                        <div class="card-body p-4">
+                            <div class="text-sports mb-2 small fw-bold"><i class="fa-solid fa-dumbbell me-1"></i> Preparación Física</div>
+                            <h5 class="card-title fw-bold">Entrenamientos</h5>
+                            <p class="card-text text-light-50 small">Programas orientados al desarrollo de capacidades condicionales específicas del futbolista, enfocados en resistencia, velocidad y potencia.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 4: Clases / Escuelita  -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card card-sport h-100 border-0 bg-navy text-white shadow-lg">
+                        <div class="card-img-container">
+                            <img src="" class="card-img-top" alt="Clases">
+                        </div>
+                        <div class="card-body p-4">
+                            <div class="text-sports mb-2 small fw-bold"><i class="fa-solid fa-chalkboard-user me-1"></i> Instrucción Técnica</div>
+                            <h5 class="card-title fw-bold">Clases Dirigidas</h5>
+                            <p class="card-text text-light-50 small">Sesiones pedagógicas destinadas al perfeccionamiento técnico-táctico individual y colectivo, coordinadas por profesionales matriculados.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+    </section>
+
+    <!-- SECCIÓN BENEFICIOS -->
+    <section id="beneficios" class="py-5 bg-football-dark border-top border-secondary border-opacity-10 section-padding section-anchor">
+        <div class="container pt-5">
+            <div class="text-center mb-5">
+                <span class="text-sports fw-bold text-uppercase tracking-wider small">Ventajas</span>
+                <h2 class="fw-bold text-white mt-1 text-uppercase">¿Por qué elegirnos?</h2>
+            </div>
+
+            <div class="row g-4 justify-content-center">
+                <div class="col-10 col-md-6 col-lg-3">
+                    <div class="p-4 bg-navy rounded-3 border-bottom border-success border-3 h-100 shadow-sm text-center text-md-start">
+                        <div class="icon-box-feature mb-3 d-inline-flex align-items-center justify-content-center">
+                            <i class="fa-solid fa-bolt fa-xl text-sports"></i>
+                        </div>
+                        <h5 class="fw-bold text-white">Reserva inmediata</h5>
+                        <p class="text-light-50 small mb-0">Olvidate de llamar. Mirá la grilla del complejo en tiempo real y asegurá tu hora al instante.</p>
+                    </div>
+                </div>
+                <div class="col-10 col-md-6 col-lg-3">
+                    <div class="p-4 bg-navy rounded-3 border-bottom border-success border-3 h-100 shadow-sm text-center text-md-start">
+                        <div class="icon-box-feature mb-3 d-inline-flex align-items-center justify-content-center">
+                            <i class="fa-solid fa-shield-halved fa-xl text-sports"></i>
+                        </div>
+                        <h5 class="fw-bold text-white">Pagos transparentes</h5>
+                        <p class="text-light-50 small mb-0">Aboná la seña de forma segura mediante la plataforma y recibí el comprobante digital.</p>
+                    </div>
+                </div>
+                <div class="col-10 col-md-6 col-lg-3">
+                    <div class="p-4 bg-navy rounded-3 border-bottom border-success border-3 h-100 shadow-sm text-center text-md-start">
+                        <div class="icon-box-feature mb-3 d-inline-flex align-items-center justify-content-center">
+                            <i class="fa-solid fa-id-card-clip fa-xl text-sports"></i>
+                        </div>
+                        <h5 class="fw-bold text-white">Cuerpo técnico</h5>
+                        <p class="text-light-50 small mb-0">Contamos con entrenadores preparados para llevar el control de asistencia de todas las escuelas.</p>
+                    </div>
+                </div>
+                <div class="col-10 col-md-6 col-lg-3">
+                    <div class="p-4 bg-navy rounded-3 border-bottom border-success border-3 h-100 shadow-sm text-center text-md-start">
+                        <div class="icon-box-feature mb-3 d-inline-flex align-items-center justify-content-center">
+                            <i class="fa-solid fa-mobile-screen-button fa-xl text-sports"></i>
+                        </div>
+                        <h5 class="fw-bold text-white">Organización 24/7</h5>
+                        <p class="text-light-50 small mb-0">Desde tu panel gestionás bajas de entrenamientos, mirás tus fixtures e imprimís tus recibos.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-navy text-white pt-5 pb-3 border-top border-secondary border-opacity-25">
+        <div class="container">
+            <div class="row g-4 border-bottom border-secondary border-opacity-50 pb-4">
+                <div class="col-lg-5">
+                    <h5 class="fw-bold mb-3 d-flex align-items-center text-uppercase text-sports">
+                        <i class="fa-solid fa-futbol me-2"></i> Gol Ahora
+                    </h5>
+                    <p class="text-light-50 small pe-lg-5">El complejo definitivo para los amantes del fútbol de alta competencia y amateur. Infraestructura de primer nivel con automatización total de tus partidos.</p>
+                </div>
+                <div class="col-6 col-lg-3">
+                    <h6 class="text-uppercase fw-bold text-sports mb-3 small">Navegación</h6>
+                    <ul class="list-unstyled text-light-50 small">
+                        <li class="mb-2"><a href="#inicio" class="text-reset text-decoration-none hover-link">Inicio</a></li>
+                        <li class="mb-2"><a href="#servicios" class="text-reset text-decoration-none hover-link">Qué Ofrecemos</a></li>
+                        <li class="mb-2"><a href="#beneficios" class="text-reset text-decoration-none hover-link">Beneficios</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-lg-4">
+                    <h6 class="text-uppercase fw-bold text-sports mb-3 small">Contacto del Predio</h6>
+                    <ul class="list-unstyled text-light-50 small">
+                        <li class="mb-2"><i class="fa-regular fa-envelope me-2 text-sports"></i> info@golahora-complejo.com</li>
+                        <li class="mb-2"><i class="fa-solid fa-phone me-2 text-sports"></i> +54 11 1234-5678</li>
+                        <li><i class="fa-solid fa-location-dot me-2 text-sports"></i> Zona Sur, Buenos Aires</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="pt-3 text-center text-light-50 small">
+                <p class="mb-0">&copy; 2026 Gol Ahora Complejo. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JavaScript Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bundle.min.js"></script>
+    <script>
+        window.addEventListener('scroll', function() {
+            const navbar = document.getElementById('mainNavbar');
+            if (window.scrollY > 30) {
+                navbar.classList.add('navbar-scrolled');
+            } else {
+                navbar.classList.remove('navbar-scrolled');
+            }
+        });
+    </script>
+    <script src="js/initData.js"></script>
+</body>
+</html>

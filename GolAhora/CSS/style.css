@@ -1,0 +1,144 @@
+:root {
+    --bg-navy: #0A2540;          /* Azul Oscuro Base */
+    --bg-football-dark: #071524; /* Fondo Principal Oscuro */
+    --bg-card-dark: #0d2035;     /* Fondo de sección de tarjetas */
+    --sports-green: #00C16E;     /* Verde Césped */
+    --sports-green-hover: #00a05b;
+    --white: #FFFFFF;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--bg-football-dark);
+}
+
+.bg-football-dark {
+    background-color: var(--bg-football-dark) !important;
+}
+
+.bg-football-card-dark {
+    background-color: var(--bg-card-dark) !important;
+}
+
+.btn-sports {
+    background-color: var(--sports-green);
+    color: var(--white);
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-sports:hover {
+    background-color: var(--sports-green-hover);
+    color: var(--white);
+}
+
+.border-sports {
+    border-color: var(--sports-green) !important;
+}
+
+.tracking-wide {
+    letter-spacing: 0.5px;
+}
+
+.style-sub {
+    max-width: 600px;
+}
+
+.section-padding {
+    padding-top: 5rem !important;
+    padding-bottom: 5rem !important;
+}
+
+/* Efectos en imágenes de las tarjetas */
+.card-sport {
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: var(--bg-navy) !important;
+}
+
+.card-sport:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 193, 110, 0.25) !important;
+}
+
+.card-img-container {
+    height: 180px;
+    overflow: hidden;
+}
+
+.card-img-container img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s ease;
+}
+
+.card-sport:hover .card-img-container img {
+    transform: scale(1.08);
+}
+
+/* Iconos de ventajas */
+.icon-box-feature {
+    width: 60px;
+    height: 60px;
+    background-color: rgba(0, 193, 110, 0.1);
+    border-radius: 12px;
+}
+
+/* Enlaces del Footer */
+.hover-link {
+    transition: color 0.2s ease;
+}
+.hover-link:hover {
+    color: var(--sports-green) !important;
+}
+
+/* Clases auxiliares para tipografía sobre fondo oscuro */
+.text-light-75 { color: rgba(255, 255, 255, 0.75); }
+.text-light-50 { color: rgba(255, 255, 255, 0.50); }
+
+/* Estilo Base del Navbar Transparente sobre el Hero */
+.custom-navbar {
+    background-color: rgba(7, 21, 36, 0.6) !important;
+    backdrop-filter: blur(10px);
+    transition: all 0.4s ease-in-out;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Estado al hacer scroll hacia abajo */
+.navbar-scrolled {
+    background-color: #061524 !important;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+    border-bottom: 1px solid rgba(0, 193, 110, 0.25);
+}
+
+.dynamic-btn {
+    white-space: nowrap;
+}
+
+
+.section-anchor {
+    scroll-margin-top: 80px;
+}
+
+.container-service-fix {
+    padding-top: 1.5rem !important;
+}
+
+.text-title-spacing {
+    margin-bottom: 3rem !important;
+}
+
+.hero-section {
+    background: linear-gradient(rgba(7, 21, 36, 0.8), rgba(7, 21, 36, 0.85)), 
+                url('https://images.unsplash.com/photo-1540747737956-3787293ac287?q=80&w=1200') no-repeat center center/cover;
+    height: 75vh;
+}
+
+@media (max-width: 991.98px) {
+    .custom-navbar {
+        background-color: #061524 !important;
+    }
+}
